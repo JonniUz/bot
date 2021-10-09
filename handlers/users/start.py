@@ -26,7 +26,7 @@ async def bot_start(call: types.CallbackQuery):
         chat = await bot.get_chat(channel)
 
         if status:
-            result += f"✅ <b>{chat.title}</b> kanaliga obuna bo'lgansiz!\n\n"
+            result += f"✔ <b>{chat.title}</b> kanaliga obuna bo'lgansiz!\n\n"
         else:
             invite_link = await chat.export_invite_link()
             result += f"❌ <b>{chat.title}</b> kanaliga obuna bo'lmagansiz!" \
